@@ -96,12 +96,15 @@ findItemFromArray("grape", fruits);
 */
 console.log("Task: C");
 
+let fruitsStartingWithB = [];
+for (i = 0; i < fruits.length; i++){
+    if (fruits[i][0].toLowerCase() == 'b'){
+        fruitsStartingWithB.push(fruits[i]);
+    }
+}
+console.log(fruitsStartingWithB);
 
-
-
-
-
-
+console.log(fruitsStartingWithB.length)
 
 /* -----------------------------------------------------------------------------
     Task: D
@@ -110,7 +113,13 @@ console.log("Task: C");
 */
 console.log("Task: D");
 
-
+let fruitsWithMoreThanEightChars = [];
+for (i = 0; i < fruits.length; i++){
+    if (fruits[i].length > 8){
+        fruitsWithMoreThanEightChars.push(fruits[i]);
+    }
+}
+console.log(fruitsWithMoreThanEightChars);
 
 
 
