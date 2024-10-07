@@ -128,3 +128,23 @@ console.log("Task: E");
 
 const A = [1, 4, 5, "Bananas", true, 3.14, 9.81];
 const B = [1, 3.14, 5, 9.81, true, 4, "Bananas"];
+
+tempArray = [];
+
+for (i = 0; i < A.length; i++){
+    if(A[i] == B[i]){
+        tempArray.push(A[i]);
+    }else{
+        for (index = B.length; index > 0; index--){
+            if(A[i] == B[index]){
+                tempArray.push(A[i]);
+            }
+        }
+    }
+}
+
+if (tempArray.length == A.length){
+    console.log("List A is the same as list B :)");
+} else {
+    console.log("List A is not equal to list B :(")
+}
