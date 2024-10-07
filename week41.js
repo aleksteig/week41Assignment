@@ -67,23 +67,17 @@ const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi', 'mango', 'pineappl
 
 for (i = 0; i < fruits.length; i++){
     if (fruits[i] == "raspberry"){
-        console.log("raspberry is in position", i+1);
+        console.log("raspberry is in index position", i);
     }
 }
 
 function findItemFromArray(item, array){
     for (i = 0; i < array.length; i++){
         if (array[i] == item){
-            console.log(item + " is in position", i+1);
+            console.log(item + " is in index position", i);
         }
     }
 }
-
-findItemFromArray("grape", fruits);
-
-
-
-
 
 
 
@@ -117,6 +111,7 @@ let fruitsWithMoreThanEightChars = [];
 for (i = 0; i < fruits.length; i++){
     if (fruits[i].length > 8){
         fruitsWithMoreThanEightChars.push(fruits[i]);
+        console.log(fruitsWithMoreThanEightChars.length)
     }
 }
 console.log(fruitsWithMoreThanEightChars);
